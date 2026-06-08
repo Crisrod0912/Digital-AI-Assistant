@@ -7,7 +7,7 @@ from colorama import init, Fore, Style
 # ==================== Inicialización de Colorama ====================
 init(autoreset=True)
 
-# ==================== Variables de Entorno ====================
+# ==================== Carga de Variables de Entorno ====================
 load_dotenv()
 
 # ==================== Configuración de API Key ====================
