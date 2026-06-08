@@ -19,7 +19,6 @@ def verificar_configuracion():
     if not API_KEY or API_KEY == "sk-tu-api-key-aqui":
         print(Fore.RED + "Error: No se encontró una API Key válida.")
         print(Fore.YELLOW + "Por favor, configura tu archivo .env con tu OPENAI_API_KEY.")
-        print(Fore.YELLOW + "Puedes usar .env.example como referencia.")
         sys.exit(1)
 
 # ==================== Inicialización del Cliente OpenAI ====================
@@ -37,7 +36,7 @@ def mostrar_bienvenida():
     print(Fore.CYAN + Style.BRIGHT + "="*60)
     print(Fore.CYAN + Style.BRIGHT + "   🤖 ASISTENTE INTELIGENTE DE PRODUCTIVIDAD PERSONAL")
     print(Fore.CYAN + Style.BRIGHT + "="*60)
-    print(Fore.WHITE + "Hola! Soy tu asistente digital experto en productividad y organización.")
+    print(Fore.WHITE + "¿Cómo estás? Soy tu asistente digital, experto en productividad y organización.")
     print(Fore.WHITE + "Puedo ayudarte a:")
     print(Fore.GREEN + "  - Priorizar tus listas de tareas")
     print(Fore.GREEN + "  - Crear planes de acción para tus objetivos")
@@ -113,7 +112,8 @@ def main():
                 continue
 
             if entrada_usuario.lower() in ['salir', 'exit', 'quit']:
-                print(Fore.CYAN + "\n¡Hasta luego! Recuerda: Un minuto de planificación ahorra diez de ejecución. ¡Éxito!")
+                print(Fore.CYAN + "\n¡Hasta luego! Y recuerda: Un minuto de planificación ahorra diez de ejecución.")
+                print(Fore.CYAN + "\n¡Muchos éxitos!")
                 break
 
             respuesta = generar_respuesta(cliente, entrada_usuario, historial)
