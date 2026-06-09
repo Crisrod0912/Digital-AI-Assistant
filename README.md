@@ -62,9 +62,10 @@ Follow these steps to correctly configure and run the project:
 
    - Rename the file `.env.example` to `.env`.
    - Open the `.env` file and paste your OpenAI API key:
-     ```
-     OPENAI_API_KEY=your_api_key_here
-     ```
+   
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
 
 7. 🚀 **Run the main server**
 
