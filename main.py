@@ -19,6 +19,7 @@ def verificar_configuracion():
     if not API_KEY or API_KEY == "sk-tu-api-key-aqui":
         print(Fore.RED + "Error: No se encontró una API Key válida.")
         print(Fore.YELLOW + "Por favor, configura tu archivo .env con tu OPENAI_API_KEY.")
+        print(Fore.YELLOW + "Puedes usar .env.example como referencia.")
         sys.exit(1)
 
 # ==================== Inicialización del Cliente OpenAI ====================
