@@ -1,6 +1,6 @@
 # 🤖 Digital-AI-Assistant
 
-Digital-AI-Assistant is a digital assistant based on existing AI, capable of analyzing user text information and offering personalized suggestions to improve productivity.
+This project consists of the design and implementation of a digital assistant based on an existing AI, capable of analyzing user text information and offering personalized suggestions to improve productivity.
 
 ## 🚀 Features
 
