@@ -1,19 +1,18 @@
-# 🤖 Intelligent Productivity Assistant
+# 🤖 Digital-AI-Assistant
 
-This project consists of the design and implementation of a digital assistant based on an existing AI, capable of analyzing textual information from the user and offering personalized suggestions to improve their productivity.
+Digital-AI-Assistant is a digital assistant based on existing AI, capable of analyzing user text information and offering personalized suggestions to improve productivity.
 
 ## 🚀 Features
 
 - 🔌 Integration with an existing artificial intelligence API.
-- 💬 Web-based interaction interface (chat).
+- 💬 Interactive console interface (chat).
 - 📦 Functions for AI to process user input such as to-do lists, goals, or emails.
 - 🧠 Natural language responses including summaries, reminders, and action plans.
 
 ## 🧰 Technologies Used
 
-- 🎨 **Frontend**: HTML, CSS, JavaScript
-- 🐍 **Backend**: Python
-- 🤖 **AI Model**: OpenAI (gpt-4o-mini)
+- 🐍 **Programming language**: Python
+- 🤖 **AI Model**: OpenAI (GPT-3.5 Turbo)
 
 ## 🛠️ Installation
 
@@ -23,7 +22,7 @@ Make sure you have the following tools installed:
 
 - 🐍 [Python](https://www.python.org/) (recommended: Python 3.10 or higher)
 - 💻 [Visual Studio Code](https://code.visualstudio.com/)
-- 🤖 OpenAI API access (API Key required)
+- 🤖 [OpenAI API access](https://platform.openai.com/home) (API Key required)
 
 ### 🔧 Setup
 
@@ -32,7 +31,7 @@ Follow these steps to correctly configure and run the project:
 1. 📥 **Clone the repository**
 
    ```bash
-   git clone https://github.com/Halcyon09/Digital-AI-Assistant.git
+   git clone https://github.com/Crisrod0912/Digital-AI-Assistant.git
    ```
 
 2. 📂 **Open the project folder in VS Code**
@@ -44,35 +43,36 @@ Follow these steps to correctly configure and run the project:
 3. 🧪 **Create a virtual environment**
 
    ```bash
-   python -m venv .venv
+   python -m venv venv
    ```
 
 4. ▶️ **Activate the virtual environment (Windows PowerShell)**
 
    ```bash
-   .\.venv\Scripts\activate
+   .\venv\Scripts\activate
    ```
 
 5. 📦 **Install required dependencies**
 
    ```bash
-   pip install fastapi uvicorn python-dotenv openai
+   pip install -r requirements.txt
    ```
 
 6. ⚙️ **Configure environment variables**
 
-   Create a `.env` file in the root directory and add your OpenAI API key:
+   - Rename the file `.env.example` to `.env`.
+   - Open the `.env` file and paste your OpenAI API key:
+     ```
+     OPENAI_API_KEY=your_api_key_here
+     ```
 
-   ```env
-   OPENAI_API_KEY=your_api_key_here
-   ```
-
-7. 🚀 **Run the backend server**
+7. 🚀 **Run the main server**
 
    ```bash
-   python -m uvicorn app.main:app
+   python main.py
    ```
 
-8. 🌐 **Access the frontend**
-
-   Open the `index.html` file located in the frontend folder using your web browser.
+> [!NOTE]
+> **Project Owner / Developer** 👨🏻‍💻  
+>- Cristopher Rodríguez Fernández 
+***
